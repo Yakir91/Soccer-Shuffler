@@ -1,0 +1,166 @@
+.firstWord {
+color: #AFEEEE;
+font-size: 100px;
+font-family: impact;
+letter-spacing: 5px;
+text-align: center;
+opacity: 1;
+}
+
+.secondWord {
+font-size: 100px;
+font-family: impact;
+color: #000080;
+letter-spacing: -2px;
+text-align: center;
+padding-left: -3cm;
+opacity: 1;
+padding-bottom: -50px;
+}
+
+.subtitle {
+font-size: 100px;
+font-family: impact;
+color: #000080;
+letter-spacing: -2px;
+text-align: center;
+margin-top: -15px;
+margin-bottom: 30px;
+}
+
+.M {
+font-size: 100px;
+font-family: impact;
+color: #1E90FF;
+text-align: center;
+padding-left: : 2cm;
+opacity: 1;
+}
+
+html { 
+ background: url(https://wallpaperset.com/w/full/8/0/9/520841.jpg) no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ opacity: 0.68;
+ overflow: auto;
+ overflow-x: hidden;
+}
+
+#border {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 180px;
+}
+
+.controller-left {
+	float: left;
+	width: 130px;
+	height: 90px;
+	opacity: 0.65;
+}
+
+.controller-right {
+	float: right;
+	width: 136px;
+	height: 90px;
+	opacity: 0.65;
+}
+
+.players-left {
+  display: flex;
+  margin-left: 300px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -30px;
+  float: left;
+}
+
+.players-right {
+  display: flex;
+  margin-right: 300px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -30px;
+  float: right;
+}
+
+.pNames-left {
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #778899;
+  letter-spacing: 2px;
+  margin: 5px 0 0 5px;
+  font-weight: bold;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.pNames-right {
+ text-align: center;
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #778899;
+ letter-spacing: 2px;
+ margin: 5px 0 0 5px;
+ font-weight: bold;
+ color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+ a#disclaimer {
+  display: inline-block;
+  line-height: 1em;
+  width: 140px;
+  color: black;
+  background-color: #F0F8FF;
+  text-align: center;
+  font-size: 17px;
+  color: #6495ED;
+  clear: both;
+  width: 100%;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+ table {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+ }
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: green;
+}
+
+.buttonClick {
+ font-size: 2em;
+ background-color: red;
+ font-weight: bold;
+ height: 80px;
+
+}
+
+
+
+
+
+
