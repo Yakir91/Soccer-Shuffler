@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="contactCSS.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<script type="text/javascript" src="Valid.js"></script>
+</head>
+	<body>
+	<div id="title">Contact Us</div>
+	<!-- for Fake API response and submit -->
+	<form name="yakir-form" action="https://httpbin.org/post" method="post">
+		<div class="container">
+			<input class="free_text_top" type="text" id="fname" name="firstname" placeholder="*First Name"><br>
+			<input class="free_text_top" type="text" id="lname" name="lastname" placeholder="*Last Name"><br>
+			<input class="free_text_top" type="text" id="email" name="EmailAddress" placeholder="*Email Address"><br>
+			<input class="free_text_top" type="text" id="phone" name="PhoneNumber" placeholder="*Phone Number"><br><br>
+		<div class="contain_middle">
+			<span id='gender'>Select Your Gender:</span><br>
+			<input checked type="radio" id="other" name="gender" value="male"><span id="radio">Male</span>
+			<input type="radio" id="other" name="gender" value="female"><span id="radio">Female</span>
+			<input type="radio" id="other" name="gender" value="other"><span id="radio">Other</span><br><br>
+			<span id='age'>Select your age:</span>
+		  	<select>
+		    	<option value="young">18-25</option>
+		    	<option value="mature">26-35</option>
+		    	<option value="old">36-50</option>
+		    	<option value="older">51-85</option>
+		    </select><br><br>
+		   </div>
+		<textarea name="comment" placeholder="Write your comment here"></textarea><br><br>
+	    <input type="checkbox" id="checkbox" class="checkbox" name="checkbox">
+		<span class="checkbox">By marking the checkbox, you accept the <a href="https://www.sport5.co.il">PP</a>&nbsp;&&nbsp;<a href="https://www.sport5.co.il">EULA</a>&nbsp;terms</span><br><br>
+		<button type="submit" class="buttonClick" title="SEND IT" onclick="validateFeedback()">SUBMIT</button>
+	
+</div>
+<!-- Change title color -->
+<input type="button" id='titleChanger' value='CHANGE!' onclick="color();">
+
+</div>
+</div>
+</body>
+</html>

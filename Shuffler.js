@@ -1,6 +1,5 @@
 const initialPlayersArray= [
 	{playerName: 'Yakir'},
-	{playerName: 'Ben'},
 	{playerName: 'Elad'},
 	{playerName: 'Garty'},
 	{playerName: 'Yossi'},	
@@ -9,15 +8,14 @@ const initialPlayersArray= [
 
 const historyMatchesArray = [];
 
-const maxMatchesNumber = 15; // !initialPlayersArray.length //!initialPlayersArray;
+const maxMatchesNumber = 15; // !initialPlayersArray.length 
 function shuffle() {
 
 	const matchesArray = [];
-	var copyArray = [...initialPlayersArray]; // initialPlayersArray.slice();
+	var copyArray = [...initialPlayersArray];
 
 	if (historyMatchesArray.length >= maxMatchesNumber) {
 		console.log('all matched')
-		//13.07.20 added.
 		return;
 	}
 			
@@ -39,11 +37,11 @@ function shuffle() {
 		// Match object
 		var newMatch = {firstName: firstPlayer.playerName, secondName: secondPlayer.playerName};
 
-		const foundExistingMatch = historyMatchesArray.find((existingMatch) => {
-			const bool124 = (((existingMatch.firstName === newMatch.firstName) && (existingMatch.secondName === newMatch.secondName)) ||
+		const foundExistingMatch = historyMatchesArray.find((existingMatch) => { //existingMatch {firstPlayer.playerName, secondPlayer.playerName}
+			const condMatch = (((existingMatch.firstName === newMatch.firstName) && (existingMatch.secondName === newMatch.secondName)) ||
 			((existingMatch.secondName === newMatch.firstName) && (existingMatch.firstName === newMatch.secondName)));
 
-			return bool124;
+			return condMatch; // True / False.
 		})
 
 		if (!!foundExistingMatch) {
@@ -52,9 +50,9 @@ function shuffle() {
 			const maxPlayerMatches = initialPlayersArray.length -1;
 			
 			const foundExistingFirstPlayer = historyMatchesArray.map((existingMatch) => {
-			const booliBooli =((existingMatch.firstName === newMatch.firstName) || (existingMatch.secondName === newMatch.firstName)) 
+			const checkExist =((existingMatch.firstName === newMatch.firstName) || (existingMatch.secondName === newMatch.firstName)); 
 
-				if (booliBooli) {
+				if (checkExist) {
 					return existingMatch;
 				}
 				else {
@@ -67,15 +65,14 @@ function shuffle() {
 			if (foundExistingFirstPlayer.length >= maxPlayerMatches) {
 
 				const firstPlayerIndex = copyArray.findIndex(item => item.playerName === firstPlayer.playerName);
+				
 				copyArray.splice(firstPlayerIndex,1); 
 			}
 
-
-
 			const foundExistingSecondPlayer = historyMatchesArray.map((existingMatch) => {
-			const booliBooli =((existingMatch.firstName === newMatch.secondName) || (existingMatch.secondName === newMatch.secondName)) 
+			const checkExist =((existingMatch.firstName === newMatch.secondName) || (existingMatch.secondName === newMatch.secondName)); 
 
-				if (booliBooli) {
+				if (checkExist) {
 					return existingMatch;
 				}
 				else {
@@ -105,21 +102,10 @@ function shuffle() {
 
 			copyArray.splice(secondPlayerIndex,1);
 
-
-
 		}
-
-		
 
 	}
 
-	matchesArray.map(match => console.log(`${match.firstName} Vs. ${match.secondName}`)); 
+	matchesArray.map(match => console.log(`${match.firstName} VS ${match.secondName}`)); 
 
 }
-
-
-
-
-
-
-

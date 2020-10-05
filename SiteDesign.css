@@ -1,0 +1,249 @@
+.firstWord {
+color: #AFEEEE;
+font-size: 100px;
+font-family: impact;
+letter-spacing: 5px;
+text-align: center;
+opacity: 1;
+}
+
+.secondWord {
+font-size: 100px;
+font-family: impact;
+color: #000080;
+letter-spacing: -2px;
+text-align: center;
+padding-left: -3cm;
+opacity: 1;
+padding-bottom: -50px;
+}
+
+.subtitle {
+font-size: 100px;
+font-family: impact;
+color: #000080;
+letter-spacing: -2px;
+text-align: center;
+margin-top: -15px;
+margin-bottom: 30px;
+}
+
+.M {
+font-size: 100px;
+font-family: impact;
+color: #1E90FF;
+text-align: center;
+padding-left: : 2cm;
+opacity: 1;
+}
+
+html { 
+ background: url(https://wallpaperset.com/w/full/8/0/9/520841.jpg) no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ background-size: cover;
+ overflow: auto;
+ overflow-x: hidden;
+}
+
+#border {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 180px;
+}
+
+.controller-left {
+	float: left;
+	width: 130px;
+	height: 90px;
+	opacity: 0.95;
+}
+
+.controller-right {
+	float: right;
+	width: 136px;
+	height: 90px;
+	opacity: 0.95;
+}
+
+.players-left {
+  /*display: flex;*/
+  margin-left: 300px;
+  /*justify-content: center;*/
+  /*flex-direction: column;*/
+  margin-top: -30px;
+  float: left;
+}
+
+.players-right {
+  /*display: flex;*/
+  margin-right: 300px;
+  /*justify-content: center;*/
+  /*flex-direction: column;*/
+  margin-top: -30px;
+  float: right;
+}
+
+.pNames-left {
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #778899;
+  letter-spacing: 2px;
+  margin: 5px 0 0 5px;
+  font-weight: bold;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.pNames-right {
+ text-align: center;
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #778899;
+ letter-spacing: 2px;
+ margin: 5px 0 0 5px;
+ font-weight: bold;
+ color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.bottomNav {
+  background-color: #00008B;
+  opacity: 75%;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 12%;
+  border: 3px solid #8AC007;
+  margin-left: 43%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bottomNav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bottomNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bottomNav a:active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttonClick {
+ font-size: 2em;
+ background: url(https://lifespringsresources.com/media/catalog/product/cache/7d7e03b689b174afb763188b0ad0a7cc/0/7/077.jpg);
+ font-weight: bold;
+ height: 90px;
+ width: 13%;
+ margin-left: 17%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  background-color: #FFF5EE;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #1E90FF;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: #DEB887;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.controller-left-down {
+  float: left;
+  width: 130px;
+  height: 90px;
+  opacity: 0.95;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.controller-right-down {
+  float: right;
+  width: 136px;
+  height: 90px;
+  opacity: 0.95;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  }
+
+#carusel {
+  width: 21%;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 6%;
+  opacity: 1;
+  
+}
+
+#right_button {
+  font-weight: bold;
+  margin-left: 85%;
+  background-color: yellow;
+}
+
+#left_button {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+#left_button:hover {
+  background-color: white;
+
+}
+
+#right_button:hover {
+  background-color: white;
+}
+
+#carusel-image {
+  border-radius: 30px;
+  -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+  
